@@ -11,6 +11,12 @@ class _CurrencyConverterMaterialPageState
     extends State<CurrencyConverterMaterialPage> {
   double result = 0;
   final TextEditingController textEditingController = TextEditingController();
+
+  void convert() {
+    result = double.parse(textEditingController.text) * 88.3;
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     print('build fn');
